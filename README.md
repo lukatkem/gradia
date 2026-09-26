@@ -1,5 +1,7 @@
 # gradia — reverse-mode automatic differentiation from scratch
 
+[![tests](https://github.com/lukatkem/gradia/actions/workflows/tests.yml/badge.svg)](https://github.com/lukatkem/gradia/actions/workflows/tests.yml) ![tests](https://img.shields.io/badge/tests-28_passing-2ea44f)
+
 **Backpropagation from scratch — the engine inside PyTorch, in ~600 lines of pure Python.**
 Every operation on a scalar `Tensor` records its parents and a two-line backward closure;
 `loss.backward()` walks the graph in reverse topological order and applies the chain rule.
